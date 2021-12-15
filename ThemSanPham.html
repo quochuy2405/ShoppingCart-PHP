@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      width: 500px;
+      margin: 0 auto;
+      background-color: rgb(106, 160, 167);
+      padding: 40px;
+      border-radius: 10px;
+      display: block;
+      color: rgb(0, 0, 0);
+      font-family:  Arial, sans-serif;
+    }
+    h2{
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+
+    }
+    p {
+      margin: 0;
+    }
+    tr{
+      width: 100%;
+    }
+    input {
+      width: 300px;
+      height: 30px;
+      border-radius: 10px;
+    }
+    button{
+      width: fit-content;
+      padding:5px 20px;
+      color: rgb(253, 253, 253);
+      background-color: rgb(119, 199, 199);
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div>
+      <form id="form">
+        <h2>Thêm sản phẩm</h2>
+        <table>
+          <tr>
+            <td colspan="2">
+              <p>Mã sản phẩm</p>
+              <input type="text" id="masp" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Tên sản phẩm</p>
+              <input type="text" id="tensp" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Nước sản xuất</p>
+              <input type="text" id="nuocsx" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Đơn vị tính</p>
+              <input type="text" id="donvi" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Giá</p>
+              <input type="text" id="gia" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Loại sản phẩm</p>
+              <input type="text" id="loaisp" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Hình ảnh</p>
+              <input type="text" id="hinhanh" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="btnthemSP">submit</button>
+            </td>
+            <td>
+              <button type="reset">reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="Ajax.js"></script>
+  </body>
+</html>
